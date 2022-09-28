@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { RouterLink, RouterView } from 'vue-router'
-import HelloWorld from './components/MainTitle.vue'
+import MainTitle from './components/MainTitle.vue'
+import SubTitle from './components/SubTitle.vue'
 </script>
 
 <template>
@@ -8,8 +9,8 @@ import HelloWorld from './components/MainTitle.vue'
     <img alt="My Photo" class="logo" src="@/assets/my_photo.jpg" width="190"/>
 
     <div class="wrapper">
-      <HelloWorld msg="황재영의 포트폴리오" />
-
+      <MainTitle maintit="황재영의 포트폴리오" />
+      <SubTitle subtit="asdasda" />
       <nav>
         <RouterLink to="/">Home</RouterLink>
         <RouterLink to="/myself">Myself</RouterLink>
@@ -41,7 +42,9 @@ nav {
 }
 
 nav a.router-link-exact-active {
-  color: var(--color-text);
+  color: var(--active-text);
+  font-weight: bold;
+  background-color: hsla(160, 100%, 37%, 1);
 }
 
 nav a.router-link-exact-active:hover {
@@ -49,14 +52,12 @@ nav a.router-link-exact-active:hover {
 }
 
 nav a {
+  margin: 0 5px 0 5px;
   display: inline-block;
   padding: 0 1rem;
-  border-left: 1px solid var(--color-border);
+  border-radius: 10px;
 }
 
-nav a:first-of-type {
-  border: 0;
-}
 
 @media (min-width: 1024px) {
   header {
