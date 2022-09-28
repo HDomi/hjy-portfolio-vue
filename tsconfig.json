@@ -5,7 +5,9 @@
     "baseUrl": ".",
     "paths": {
       "@/*": ["./src/*"]
-    }
+    },
+    "checkJs": false,
+    "allowJs": true
   },
 
   "references": [

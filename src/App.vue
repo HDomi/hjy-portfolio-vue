@@ -6,15 +6,17 @@ import SubTitle from './components/SubTitle.vue'
 
 <template>
   <header>
-    <img alt="My Photo" class="logo" src="@/assets/my_photo.jpg" width="190"/>
-
+    <img alt="My Photo" class="logo" src="@/assets/my_photo.jpg" width="170"/>
     <div class="wrapper">
-      <MainTitle maintit="황재영의 포트폴리오" />
-      <SubTitle subtit="asdasda" />
+      <MainTitle maintit="황재영의 Portfolio입니다." />
+      <SubTitle subtit="안녕하세요." />
       <nav>
         <RouterLink to="/">Home</RouterLink>
         <RouterLink to="/myself">Myself</RouterLink>
-        <RouterLink to="/portfolio">Portfolio</RouterLink>
+        <RouterLink to="/portfolio">Dev_</RouterLink>
+        <RouterLink to="/design">Design</RouterLink>
+        <RouterLink to="/contact">Contact</RouterLink>
+        <RouterLink to="/finish">Finish</RouterLink>
       </nav>
     </div>
   </header>
@@ -36,7 +38,7 @@ header {
 
 nav {
   width: 100%;
-  font-size: 12px;
+  font-size: 1.1rem;
   text-align: center;
   margin-top: 2rem;
 }
@@ -52,7 +54,7 @@ nav a.router-link-exact-active:hover {
 }
 
 nav a {
-  margin: 0 5px 0 5px;
+  margin: 10px 5px 0 5px;
   display: inline-block;
   padding: 0 1rem;
   border-radius: 10px;
@@ -78,9 +80,8 @@ nav a {
 
   nav {
     text-align: left;
-    margin-left: -1rem;
-    font-size: 1rem;
-
+    margin-left: -0.4rem;
+    font-size: 1.1rem;
     padding: 1rem 0;
     margin-top: 1rem;
   }

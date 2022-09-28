@@ -14,12 +14,15 @@
   word-break: keep-all;
   font-weight: normal;
   transition: 0.3s;
+  list-style: none;
 }
+*{list-style: none;}
 a{text-decoration: none;}
 div{box-sizing: border-box;}
 ::-webkit-scrollbar {
   display: none;
 }
+input{}
 textarea{padding-top:10px;}
 input:focus {outline:none;}
 textarea:focus {outline:none;padding-left: 10px;padding-top:10px;}

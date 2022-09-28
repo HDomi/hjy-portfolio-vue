@@ -1,14 +1,14 @@
 <script setup lang="ts">
-    defineProps<{
-        subtit: string
-}>()
+  defineProps<{
+    subtit: string
+  }>()
 </script>
 
 <template>
     <div class="greetings">
       <h3>{{ subtit }}</h3>        
     </div>
-  </template>
+</template>
 
 
 <style scoped>
