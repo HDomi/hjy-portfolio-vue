@@ -24,23 +24,23 @@ import ToolingIcon from './icons/IconTooling.vue'
       <div class="stack_wrap">
         <div class="stack_cnt">
           <img alt="HTML5" src="@/assets//main_ic/ic_html5.png" width="30"/>
-          &nbsp;HTML5
+          &nbsp;<div class="stack_name">HTML5</div>
         </div>
         <div class="stack_cnt">
           <img alt="CSS3" src="@/assets//main_ic/ic_css3.png" width="30"/>
-          &nbsp;CSS3
+          &nbsp;<div class="stack_name">CSS3</div>
         </div>
         <div class="stack_cnt">
           <img alt="Javascript" src="@/assets//main_ic/ic_js.png" width="30"/>
-          &nbsp;Javascript
+          &nbsp;<div class="stack_name">Javascript</div>
         </div>
         <div class="stack_cnt">
           <img alt="Vue" src="@/assets//main_ic/ic_vue.png" width="30"/>
-          &nbsp;Vue
+          &nbsp;<div class="stack_name">Vue</div>
         </div>
         <div class="stack_cnt">
           <img alt="Ts" src="@/assets//main_ic/ic_ts.png" width="30"/>
-          &nbsp;Ts
+          &nbsp;<div class="stack_name">Ts</div>
         </div>
       </div>
   </HomeItem>
@@ -71,4 +71,14 @@ import ToolingIcon from './icons/IconTooling.vue'
     align-items: center;
   }
   .stack_cnt:first-of-type{margin-left: 0;}
+  @media (max-width: 540px) {
+    .stack_wrap{
+    zoom: 0.8;
+  }
+  }
+  @media (max-width: 467px) {
+    .stack_name{
+      display: none;
+  }
+  }
 </style>
