@@ -1,6 +1,5 @@
 <script setup lang="ts">
-  import Maintit from '../components/MainTitle.vue'
-
+    import Maintit from '../components/MainTitle.vue'
 </script>
 <template>
     <div class="contact">

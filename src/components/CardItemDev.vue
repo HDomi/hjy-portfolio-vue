@@ -2,26 +2,42 @@
     defineProps<{
         dn_tit: string,
         dn_txt: string,
-        dn_percent: any
+        dn_percent: any,
+        dn_sub: string,
     }>()
 </script>
 <template>
     <div class="p_card">
-        <div class="figmashow">
-            
-        </div>
         <div class="p_content">
             <h3>{{ dn_tit }}</h3>
             <p>{{ dn_txt }}<br/>기여도 : {{ dn_percent }}</p>
-            클릭해보세요!
+            <div class="click_txt">Hover & Click</div><br/>
+            <div class="p_card_sub">작업물에 대해..<br/><span><br/>{{ dn_sub }}</span></div>
         </div>
     </div>
 </template>
 <style scoped>
+.p_card:hover .p_card_sub{
+    display: block;
+    transition: .45s;
+}
+.p_card_sub span{
+    font-weight: normal;
+}
+.p_card_sub{
+    font-weight: bold;
+    display: none;
+    transition: .45s;
+}
+.p_card:hover{
+    height: 400px;
+    transition: .45s;
+}
 .p_card{
     padding: 20px;
     position: relative;
     width: 260px;
+    transition: .45s;
     height: 220px;
     margin: 15px;
     box-shadow: 20px 20px 50px rgba(0,0,0,0.5);
@@ -34,6 +50,13 @@
     border-top: 1px solid rgba(255, 255, 255, 0.5);
     border-left: 1px solid rgba(255, 255, 255, 0.5);
     backdrop-filter: blur(5px);
+}
+.click_txt{
+    color: hsla(160, 100%, 37%, 1);
+    font-size: 0.9em;
+    position: absolute;
+    right: -6px;
+    bottom: -10px;
 }
 .p_content{
     position: relative;
@@ -53,5 +76,19 @@
     color: #fff;
     font-weight: 300;
 }
-
+@media (max-width: 1024px) {
+.p_card_sub{
+    display: block !important;;
+    transition: .45s;
+}
+.p_card_sub{
+    font-weight: bold;
+    display: none;
+    transition: .45s;
+}
+.p_card{
+    height: 400px;
+    transition: .45s;
+}
+}
 </style>

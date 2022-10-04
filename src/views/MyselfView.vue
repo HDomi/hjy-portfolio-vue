@@ -60,6 +60,7 @@
 }
 .myself {
     padding-top: 80px;
+    margin-bottom: 50px;
   }
 @media (max-width: 1024px) {
   .ms_container{

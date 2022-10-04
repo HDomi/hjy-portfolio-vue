@@ -23,7 +23,8 @@ div{box-sizing: border-box;}
   display: none;
 }
 input{}
-textarea{padding-top:10px;}
+textarea{padding-top:10px;font-family: 나눔스퀘어, 'NanumSquare', sans-serif; 
+}
 input:focus {outline:none;}
 textarea:focus {outline:none;padding-left: 10px;padding-top:10px;}
 a,

@@ -9,13 +9,13 @@ import SubTitle from './components/SubTitle.vue'
     <img alt="My Photo" class="logo" src="@/assets/my_photo.jpg" width="170"/>
     <div class="wrapper">
       <MainTitle maintit="황재영의 Portfolio입니다." />
-      <SubTitle subtit="안녕하세요." />
+      <SubTitle subtit="안녕하세요. 풀스택을 목표로 하는 황재영입니다." />
       <nav>
         <RouterLink to="/">Home</RouterLink>
         <RouterLink to="/myself">Myself</RouterLink>
         <RouterLink to="/portfolio">Dev_</RouterLink>
         <RouterLink to="/design">Design</RouterLink>
-        <RouterLink to="/contact">Contact</RouterLink>
+      <!--  <RouterLink to="/contact">Contact</RouterLink>-->
         <RouterLink to="/finish">Finish</RouterLink>
       </nav>
     </div>
